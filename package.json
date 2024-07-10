@@ -2,6 +2,7 @@
     "name": "les-achats-industriels",
     "version": "3.0.0",
     "private": true,
+    "homepage": "https://7e-sky.github.io/frontendgit",
     "dependencies": {
         "@ckeditor/ckeditor5-build-classic": "^16.0.0",
         "@ckeditor/ckeditor5-react": "^2.1.0",
@@ -101,7 +102,9 @@
         "eject": "react-scripts eject",
         "build-docs": "find ./src/app/main/documentation/material-ui-components \\( -name '*.ts' -o -name '*.tsx' \\) -type f -delete && babel-node src/app/main/documentation/material-ui-components/build.js",
         "build-stats": "yarn run build --stats",
-        "bundle-report": "yarn run build-stats && webpack-bundle-analyzer build/bundle-stats.json -m static -r build/bundle-stats.html -O"
+        "bundle-report": "yarn run build-stats && webpack-bundle-analyzer build/bundle-stats.json -m static -r build/bundle-stats.html -O",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
