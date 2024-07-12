@@ -1,7 +1,9 @@
 {
     "name": "les-achats-industriels",
+
     "version": "3.0.0",
     "private": true,
+
     "dependencies": {
         "@ckeditor/ckeditor5-build-classic": "^16.0.0",
         "@ckeditor/ckeditor5-react": "^2.1.0",
@@ -21,8 +23,10 @@
         "formsy-react": "1.1.5",
         "google-map-react": "1.1.4",
         "jsonwebtoken": "8.5.1",
+
         "jss": "10.0.0-alpha.16",
         "jss-extend": "6.2.0",
+
         "jwt-decode": "2.2.0",
         "keycode": "2.2.0",
         "lodash": "4.17.11",
@@ -85,6 +89,7 @@
         "@babel/node": "7.4.5",
         "@babel/preset-env": "7.4.5",
         "cross-env": "5.2.0",
+        "gh-pages": "^6.1.1",
         "globby": "9.2.0",
         "js-beautify": "1.10.0",
         "marked": "0.6.2",
@@ -100,7 +105,9 @@
         "eject": "react-scripts eject",
         "build-docs": "find ./src/app/main/documentation/material-ui-components \\( -name '*.ts' -o -name '*.tsx' \\) -type f -delete && babel-node src/app/main/documentation/material-ui-components/build.js",
         "build-stats": "yarn run build --stats",
-        "bundle-report": "yarn run build-stats && webpack-bundle-analyzer build/bundle-stats.json -m static -r build/bundle-stats.html -O"
+        "bundle-report": "yarn run build-stats && webpack-bundle-analyzer build/bundle-stats.json -m static -r build/bundle-stats.html -O",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
