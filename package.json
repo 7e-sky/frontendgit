@@ -25,7 +25,7 @@
         "jsonwebtoken": "8.5.1",
 
         "jss": "^10.0.0-alpha.16",
-        "jss-extend": "^10.0.0", 
+        "jss-extend": "^6.2.0", 
 
         "jwt-decode": "2.2.0",
         "keycode": "2.2.0",
