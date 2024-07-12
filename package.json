@@ -1,6 +1,6 @@
 {
     "name": "les-achats-industriels",
-    "version": "3.0.0",
+    "version": "1.0.0",
     "private": true,
     "homepage": "https://7e-sky.github.io/frontendgit",
     "dependencies": {
@@ -22,8 +22,8 @@
         "formsy-react": "1.1.5",
         "google-map-react": "1.1.4",
         "jsonwebtoken": "8.5.1",
-        "jss": "10.0.0-alpha.16",
-        "jss-extend": "6.2.0",
+        "jss": "^9.8.7",
+        "jss-extend": "^6.2.0",
         "jwt-decode": "2.2.0",
         "keycode": "2.2.0",
         "lodash": "4.17.11",
